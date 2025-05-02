@@ -1,21 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
-@import "tailwindcss";
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --hostGrotesk: "Host Grotesk", sans-serif;
+@layer base {
+    :root {
+        --sidebar-background: 0 0% 98%;
+        --sidebar-foreground: 240 5.3% 26.1%;
+        --sidebar-editor-primary: 240 5.9% 10%;
+        --sidebar-editor-primary-foreground: 0 0% 98%;
+        --sidebar-accent: 240 4.8% 95.9%;
+        --sidebar-accent-foreground: 240 5.9% 10%;
+        --sidebar-border: 220 13% 91%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+        --editor-primary: 222.2 47.4% 11.2%;
+        --editor-primary-foreground: 210 40% 98%;
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 222.2 84% 4.9%;
+        --radius: 0.5rem;
+        --white: 0 0% 100%;
+        --black: #252525;
+        --primary: 244 77% 63%;
+        --primary-hover: #554ae8;
+        --primary-light: #edecff;
+        --red: #e74d3c;
+        --yellow: #f1c40f;
+        --green: #07bc0c;
+        --primary-shadow: 0px 8px 10px 0px #6258e973;
+        --black-to-white: #252525;
+        --hsl-black: 0 0% 0%;
+    }
+    .dark {
+        --sidebar-background: 240 5.9% 10%;
+        --sidebar-foreground: 240 4.8% 95.9%;
+        --sidebar-editor-primary: 224.3 76.3% 48%;
+        --sidebar-editor-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 240 3.7% 15.9%;
+        --sidebar-accent-foreground: 240 4.8% 95.9%;
+        --sidebar-border: 240 3.7% 15.9%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+        --background: 222.2 47.4% 11.2%;
+        --foreground: 210 40% 98%;
+        --card: 222.2 47.4% 11.2%;
+        --card-foreground: 210 40% 98%;
+        --popover: 222.2 47.4% 11.2%;
+        --popover-foreground: 210 40% 98%;
+        --editor-primary: 210 40% 98%;
+        --editor-primary-foreground: 222.2 47.4% 11.2%;
+        --secondary: 217.2 32.6% 17.5%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 217.2 32.6% 17.5%;
+        --input: 217.2 32.6% 17.5%;
+        --ring: 212.7 26.8% 83.9%;
+
+        --white: 0 0% 100%;
+        --black: #252525;
+        --primary: 244 77% 63%;
+        --primary-hover: #554ae8;
+        --primary-light: #edecff;
+        --red: #e74d3c;
+        --yellow: #f1c40f;
+        --green: #07bc0c;
+        --editor-primary-shadow: 0px 8px 10px 0px #6258e973;
+        --black-to-white: #fefefe;
+    }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* [data-theme="dark"] {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 
 body {
-  background: var(--background);
-  color: "#252525";
+    color: var(--foreground);
+    background: var(--background);
+}
+/* Hide spinner in Webkit browsers (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide spinner in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Optional: Remove the default border or appearance if needed */
+input[type="number"] {
+    appearance: none;
+}
+
+/* Add this to your global CSS */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer 10+ */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+#_rht_toaster{
+    z-index: 100000000000000 !important;
 }
