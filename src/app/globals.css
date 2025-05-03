@@ -44,8 +44,6 @@
     --primary-shadow: 0px 8px 10px 0px #6258e973;
     --black-to-white: #252525;
     --hsl-black: 0 0% 0%;
-    --hostGrotesk: "Host Grotesk", sans-serif;
-    --redHatDisplay: "Red Hat Display", sans-serif;
   }
   .dark {
     --sidebar-background: 240 5.9% 10%;
