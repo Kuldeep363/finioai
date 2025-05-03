@@ -26,7 +26,7 @@ const Button = ({
     return (
         <button
             className={clsx(
-                "flex items-center justify-center gap-1 rounded-full py-2 px-6 transition-all font-bold",
+                "flex items-center justify-center gap-1 rounded-full py-2 px-6 transition-all",
                 {
                     "bg-[hsl(var(--primary))] text-white hover:bg-[var(--primary-hover)]":
                         variant === "filled" || variant === "loading",

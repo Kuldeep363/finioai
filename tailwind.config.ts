@@ -80,7 +80,8 @@ export default {
         },
 
         fontFamily: {
-            hostGrotesk: "var(--hostGrotesk)",
+          hostGrotesk: "var(--hostGrotesk)",
+          redHatDisplay: "var(--redHatDisplay)"
         },
         boxShadow: {
             primary_shadow: "0px 8px 10px 0px #6258E973",
