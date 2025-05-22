@@ -2,26 +2,55 @@ import { Button } from "@/components/button/Button";
 import { ExportCircle } from "iconsax-react";
 import Image from "next/image";
 
+const NAV_ITEMS = [
+  {
+    title: "About",
+    link: "#about",
+  },
+  {
+    title: "Product",
+    link: "#product",
+  },
+  {
+    title: "Contact",
+    link: "#contact",
+  },
+  {
+    title: "FAQ",
+    link: "#faq",
+  },
+];
+
 const Navbar = () => {
   return (
     <nav className="w-full py-3 px-6 flex justify-center">
       <div className=" container">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <div className="flex gap-1 sm:gap-2 items-center">
             <Image
               src="https://kuldeep363.github.io/assets/finioai-logo.svg"
-              width={25}
-              height={50}
+              width={15}
+              height={30}
               alt="Finioai logo"
               className="w-[15px] sm:w-[20px]"
             />
-            <p className="text-lg sm:text-xl font-medium text-black">FinioAI</p>
+            <p className="text-lg sm:text-2xl font-normal text-black">
+              FinioAI
+            </p>
           </div>
-          <div></div>
+          <div className="flex gap-6">
+            {NAV_ITEMS.map((item: any) => {
+              return (
+                <p key={item.link} className="font-light cursor-pointer relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full after:rounded-full after:bg-primary">
+                  {item.title}
+                </p>
+              );
+            })}
+          </div>
           <Button
             iconPosition="right"
             icon={<ExportCircle color="hsl(var(--white))" size={16} />}
-            className="font-redHatDisplay "
+            className="font-redhat"
           >
             Join waitlist
           </Button>
