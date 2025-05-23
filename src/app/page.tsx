@@ -8,7 +8,7 @@ export default function Home() {
     <div className="min-h-screen max-w-screen w-full">
       <div
         id="hero-section"
-        className="w-full min-h-screen"
+        className="w-full min-h-screen px-6 relative"
         style={{
           background:
             "linear-gradient(0deg, rgba(231, 229, 255, 1) 0%, rgba(245, 245, 255, 1) 64%)",
@@ -16,21 +16,21 @@ export default function Home() {
       >
         <Navbar />
         <div className="flex justify-center">
-          <div className="mt-36 max-w-[90%] sm:max-w-[40%] flex flex-col items-center">
-            <p className="font-host text-[48px] font-medium text-center leading-none">
+          <div className="mt-36 flex flex-col items-center container">
+            <p className="font-host text-5xl font-medium text-center leading-none">
               Centralised Management
             </p>
-            <p className="font-host text-[32px] font-light text-center">
+            <p className="font-host text-xl sm:text-3xl font-normal text-center">
               for All Your Financial Accounts
             </p>
-            <p className="font-redhat text-[18px] font-light text-center w-[75%]">
-              Effortlessly manage finances with our platform, uniting all bank
-              accounts and actions in one place.
+            <p className="font-redhat text-sm sm:text-lg font-light text-center sm:w-[75%]">
+              Effortlessly manage finances with our platform, <br />
+              uniting all bank accounts and actions in one place.
             </p>
             <Button
               iconPosition="right"
               icon={<ExportCircle color="hsl(var(--white))" size={16} />}
-              className="font-redhat mt-3 w-[90%]"
+              className="font-redhat mt-3 w-full max-w-[500px]"
             >
               Join waitlist
             </Button>
@@ -43,6 +43,15 @@ export default function Home() {
               alt="finioai dashboard"
               width={2000}
               height={1000}
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="block sm:hidden w-[90%] mt-20">
+            <Image
+              src={"https://kuldeep363.github.io/assets/hero-img-sm.png"}
+              alt="finioai dashboard"
+              width={1000}
+              height={2000}
               className="w-full h-auto"
             />
           </div>
