@@ -47,7 +47,7 @@ const Menubar = ({ NAV_ITEMS }: { NAV_ITEMS: any }) => {
           >
             <div className="flex gap-1 sm:gap-2 items-center">
               <Image
-                src="https://kuldeep363.github.io/assets/finioai-logo.svg"
+                src={`${process.env.NEXT_PUBLIC_IMAGE_HOST}/finioai-logo.svg`}
                 width={15}
                 height={30}
                 alt="Finioai logo"
@@ -71,8 +71,8 @@ const Menubar = ({ NAV_ITEMS }: { NAV_ITEMS: any }) => {
             </div>
             <div className="mt-6">
               <p className="font-redhat text-sm sm:text-lg font-light sm:w-[75%]">
-                Effortlessly manage finances with our platform, 
-                uniting all bank accounts and actions in one place.
+                Effortlessly manage finances with our platform, uniting all bank
+                accounts and actions in one place.
               </p>
               <Button
                 iconPosition="right"

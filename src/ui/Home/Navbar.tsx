@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex gap-1 sm:gap-2 items-center">
             <Image
-              src="https://kuldeep363.github.io/assets/finioai-logo.svg"
+              src={`${process.env.NEXT_PUBLIC_IMAGE_HOST}/finioai-logo.svg`}
               width={15}
               height={30}
               alt="Finioai logo"

@@ -1,5 +1,9 @@
 import { Button } from "@/components/button/Button";
+import Faq from "@/ui/Home/Faq";
+import Feature from "@/ui/Home/Feature";
 import Navbar from "@/ui/Home/Navbar";
+import Ready from "@/ui/Home/Ready";
+import Why from "@/ui/Home/Why";
 import { ExportCircle } from "iconsax-react";
 import Image from "next/image";
 
@@ -39,7 +43,7 @@ export default function Home() {
         <div className="flex justify-center">
           <div className="hidden sm:block w-[70%] mt-20">
             <Image
-              src={"https://kuldeep363.github.io/assets/hero-img.png"}
+              src={`${process.env.NEXT_PUBLIC_IMAGE_HOST}/hero-img.png`}
               alt="finioai dashboard"
               width={2000}
               height={1000}
@@ -48,7 +52,7 @@ export default function Home() {
           </div>
           <div className="block sm:hidden w-[90%] mt-20">
             <Image
-              src={"https://kuldeep363.github.io/assets/hero-img-sm.png"}
+              src={`${process.env.NEXT_PUBLIC_IMAGE_HOST}/hero-img-sm.png`}
               alt="finioai dashboard"
               width={1000}
               height={2000}
@@ -57,6 +61,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Feature />
+      <Why />
+      <Ready />
+      <Faq/>
     </div>
   );
 }
