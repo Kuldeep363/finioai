@@ -34,7 +34,7 @@
     --radius: 0.5rem;
     --white: 0 0% 100%;
     --black: #272735;
-    --primary: 244 77% 63%;
+    --primary: 243 90% 66%;
     --primary-hover: #554ae8;
     --primary-light: #f0f5ff;
     --primary-light-hover: #dce7ff;
@@ -88,30 +88,15 @@
   }
 }
 @font-face {
-  font-family: "Red Hat Display";
-  src: url("/fonts/RedHatDisplay-VariableFont_wght.ttf") format("truetype");
+  font-family: "Figtree";
+  src: url("/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
   font-weight: 300 900; /* Variable font weight range */
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Red Hat Display Italic";
-  src: url("/fonts/RedHatDisplay-Italic-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: 300 900; /* Variable font weight range */
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Host Grotesk";
-  src: url("/fonts/HostGrotesk-VariableFont_wght.ttf") format("truetype");
-  font-weight: 300 900; /* Variable font weight range */
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Host Grotesk Italic";
-  src: url("/fonts/HostGrotesk-Italic-VariableFont_wght.ttf") format("truetype");
+  font-family: "Figtree italic";
+  src: url("/fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
   font-weight: 300 900; /* Variable font weight range */
   font-style: italic;
   font-display: swap;

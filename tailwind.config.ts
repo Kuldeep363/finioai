@@ -77,8 +77,8 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        host: ['"Host Grotesk"'],
-        redhat: ['"Red Hat Display"'],
+        figtree: ["Figtree"],
+        figtreeItalic: ["Figtree italic"],
       },
       boxShadow: {
         primary_shadow: "0px 8px 10px 0px #6258E973",

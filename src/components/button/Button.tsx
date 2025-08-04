@@ -24,33 +24,32 @@ const Button = ({
     ...props
 }: ButtonProps) => {
     return (
-        <button
-            className={clsx(
-                "flex items-center justify-center gap-1 rounded-full py-2 px-6 transition-all",
-                {
-                    "bg-[hsl(var(--primary))] text-white hover:bg-[var(--primary-hover)]":
-                        variant === "filled" || variant === "loading",
-                    "border border-[hsl(var(--primary))] text-[hsl(var(--primary))] hover:border-[var(--primary-hover)]":
-                        variant === "outlined",
-                    "text-[hsl(var(--primary))]": variant === "ghost",
-                    "opacity-20 cursor-not-allowed": props.disabled,
-                    "cursor-not-allowed pointer-events-none":
-                        variant === "loading",
-                    "p-0 w-10 h-10": onlyIcon,
-                    "shadow-primary_shadow": shadow === "primary",
-                },
-                className
-            )}
-            {...props}
-        >
-            {icon && iconPosition === "left" && (
-                <span className={clsx("pr-1", iconClassName)}>{icon}</span>
-            )}
-            {!onlyIcon && children}
-            {icon && iconPosition === "right" && (
-                <span className={clsx("pl-1", iconClassName)}>{icon}</span>
-            )}
-        </button>
+      <button
+        className={clsx(
+          "flex items-center justify-center gap-1 rounded-xl px-6 py-3 transition-all",
+          {
+            "bg-[hsl(var(--primary))] text-white hover:bg-[var(--primary-hover)]":
+              variant === "filled" || variant === "loading",
+            "border border-[hsl(var(--primary))] text-[hsl(var(--primary))] hover:border-[var(--primary-hover)]":
+              variant === "outlined",
+            "text-[hsl(var(--primary))]": variant === "ghost",
+            "opacity-20 cursor-not-allowed": props.disabled,
+            "cursor-not-allowed pointer-events-none": variant === "loading",
+            "p-0 w-10 h-10": onlyIcon,
+            "shadow-primary_shadow": shadow === "primary",
+          },
+          className
+        )}
+        {...props}
+      >
+        {icon && iconPosition === "left" && (
+          <span className={clsx("pr-1", iconClassName)}>{icon}</span>
+        )}
+        {!onlyIcon && children}
+        {icon && iconPosition === "right" && (
+          <span className={clsx("pl-1", iconClassName)}>{icon}</span>
+        )}
+      </button>
     );
 };
 
