@@ -22,20 +22,26 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-6 mb-6">
-            <Button
-              className="font-medium mt-3"
-              icon={
-                <ArrowLineUpRightIcon
-                  weight="bold"
-                  size={16}
-                  color="hsl(var(--white))"
-                />
-              }
-              iconPosition="right"
+            <a
+              href="https://app.youform.com/forms/qtqzxawm"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Join waitlist
-            </Button>
-            <a href="mailto:hello@finioai.com" className="block">
+              <Button
+                className="font-medium mt-3"
+                icon={
+                  <ArrowLineUpRightIcon
+                    weight="bold"
+                    size={16}
+                    color="hsl(var(--white))"
+                  />
+                }
+                iconPosition="right"
+              >
+                Join waitlist
+              </Button>
+            </a>
+            <a href="mailto:info@finioai.com" className="block">
               <Button
                 className="font-medium mt-3 bg-white w-full"
                 icon={
@@ -58,10 +64,10 @@ const CTA = () => {
               <EnvelopeSimpleIcon className="h-5 w-5" />
               <span>Questions? Reach out to</span>
               <a
-                href="mailto:hello@finioai.com"
+                href="mailto:info@finioai.com"
                 className="text-primary hover:text-primary-hover font-medium"
               >
-                hello@finioai.com
+                info@finioai.com
               </a>
             </div>
           </div>

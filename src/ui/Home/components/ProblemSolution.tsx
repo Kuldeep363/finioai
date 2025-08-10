@@ -146,13 +146,19 @@ const ProblemSolution = () => {
         </div>
         <div className="flex justify-center w-full">
           <div className="pt-4 w-full sm:w-1/3">
-            <Button
-              icon={<ArrowLineUpRightIcon size={16} weight="bold" />}
-              iconPosition="right"
-              className="font-medium w-full"
+            <a
+              href="https://app.youform.com/forms/qtqzxawm"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Join Waitlist
-            </Button>
+              <Button
+                icon={<ArrowLineUpRightIcon size={16} weight="bold" />}
+                iconPosition="right"
+                className="font-medium w-full"
+              >
+                Join Waitlist
+              </Button>
+            </a>
           </div>
         </div>
       </div>

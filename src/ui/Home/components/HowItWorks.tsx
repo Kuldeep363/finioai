@@ -61,8 +61,8 @@ const HowItWorks = () => {
         </div>
 
         <div className="relative">
-          <div className="absolute top-0 bottom-0 left-10 w-1 bg-primary-light md:hidden"/>
-          <div className="absolute left-0 right-0 top-10 h-1 bg-primary-light hidden md:block"/>
+          <div className="absolute top-0 bottom-0 left-10 w-1 bg-primary-light md:hidden" />
+          <div className="absolute left-0 right-0 top-10 h-1 bg-primary-light hidden md:block" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {steps.map((step, index) => (
               <div key={index} className="relative">
@@ -83,19 +83,26 @@ const HowItWorks = () => {
         </div>
 
         <div className="flex justify-center w-full">
-          <Button
-            className="font-medium mt-3 w-full sm:w-1/3"
-            icon={
-              <ArrowLineUpRightIcon
-                weight="bold"
-                size={16}
-                color="hsl(var(--white))"
-              />
-            }
-            iconPosition="right"
+          <a
+            href="https://app.youform.com/forms/qtqzxawm"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-1/3"
           >
-            Join waitlist
-          </Button>
+            <Button
+              className="font-medium mt-3 w-full "
+              icon={
+                <ArrowLineUpRightIcon
+                  weight="bold"
+                  size={16}
+                  color="hsl(var(--white))"
+                />
+              }
+              iconPosition="right"
+            >
+              Join waitlist
+            </Button>
+          </a>
         </div>
       </div>
     </section>

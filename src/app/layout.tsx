@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Finio AI",
@@ -18,6 +19,7 @@ export default function RootLayout({
         className="font-figtree"
       >
         {children}
+        <Toaster/>
       </body>
     </html>
   );

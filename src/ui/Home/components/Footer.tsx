@@ -1,8 +1,7 @@
 import {
-  BuildingIcon,
-  GithubLogoIcon,
   LinkedinLogoIcon,
   TwitterLogoIcon,
+  InstagramLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import React from "react";
@@ -33,16 +32,25 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://x.com/finioai"
+                  target="_blank"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <TwitterLogoIcon className="h-5 w-5" weight="fill" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/finioai/"
+                  target="_blank"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <LinkedinLogoIcon className="h-5 w-5" weight="fill" />
+                </a>
+                <a
+                  href="https://www.instagram.com/finioai/"
+                  target="_blank"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <InstagramLogoIcon className="h-5 w-5" weight="fill" />
                 </a>
                 {/* <a
                   href="#"

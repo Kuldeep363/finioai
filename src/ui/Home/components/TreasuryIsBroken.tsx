@@ -16,19 +16,25 @@ const TreasuryIsBroken = () => {
             <span className="font-bold">FinioAI is.</span>
           </p>
           <div className="flex justify-center sm:justify-start">
-            <Button
-              className="font-medium bg-white !text-primary mt-3"
-              icon={
-                <ArrowLineUpRightIcon
-                  weight="bold"
-                  size={16}
-                  color="hsl(var(--primary))"
-                />
-              }
-              iconPosition="right"
+            <a
+              href="https://app.youform.com/forms/qtqzxawm"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Join waitlist
-            </Button>
+              <Button
+                className="font-medium bg-white hover:!bg-white !text-primary hover:!text-primary mt-3"
+                icon={
+                  <ArrowLineUpRightIcon
+                    weight="bold"
+                    size={16}
+                    color="hsl(var(--primary))"
+                  />
+                }
+                iconPosition="right"
+              >
+                Join waitlist
+              </Button>
+            </a>
           </div>
         </div>
       </div>

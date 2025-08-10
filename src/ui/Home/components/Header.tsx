@@ -9,6 +9,7 @@ import {
 import clsx from "clsx";
 import { ExportCircle, Menu } from "iconsax-react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect } from "react";
 
 const Header = () => {
@@ -73,19 +74,21 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button
-              className="font-medium"
-              icon={
-                <ArrowLineUpRightIcon
-                  weight="bold"
-                  size={16}
-                  color="hsl(var(--white))"
-                />
-              }
-              iconPosition="right"
-            >
-              Join waitlist
-            </Button>
+            <Link href="/join-waitlist" rel="noopener noreferrer">
+              <Button
+                className="font-medium"
+                icon={
+                  <ArrowLineUpRightIcon
+                    weight="bold"
+                    size={16}
+                    color="hsl(var(--white))"
+                  />
+                }
+                iconPosition="right"
+              >
+                Join waitlist
+              </Button>
+            </Link>
           </div>
 
           <button
@@ -137,19 +140,21 @@ const Header = () => {
             >
               FAQ
             </a> */}
-            <Button
-              className="font-medium"
-              icon={
-                <ArrowLineUpRightIcon
-                  weight="bold"
-                  size={16}
-                  color="hsl(var(--white))"
-                />
-              }
-              iconPosition="right"
-            >
-              Join waitlist
-            </Button>
+            <Link href="/join-waitlist" rel="noopener noreferrer">
+              <Button
+                className="font-medium"
+                icon={
+                  <ArrowLineUpRightIcon
+                    weight="bold"
+                    size={16}
+                    color="hsl(var(--white))"
+                  />
+                }
+                iconPosition="right"
+              >
+                Join waitlist
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -28,22 +28,30 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16 w-full">
-            <Button
-              className="font-medium sm:w-[350px]"
-              icon={
-                <ArrowLineUpRightIcon
-                  weight="bold"
-                  size={16}
-                  color="hsl(var(--white))"
-                />
-              }
-              iconPosition="right"
+            <a
+              href="https://app.youform.com/forms/qtqzxawm"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Join waitlist
-            </Button>
-            <Button className="font-medium" variant="outlined">
-              Contact us
-            </Button>
+              <Button
+                className="font-medium sm:w-[350px]"
+                icon={
+                  <ArrowLineUpRightIcon
+                    weight="bold"
+                    size={16}
+                    color="hsl(var(--white))"
+                  />
+                }
+                iconPosition="right"
+              >
+                Join waitlist
+              </Button>
+            </a>
+            <a href="mailto:info@finioai.com" className="block">
+              <Button className="font-medium" variant="outlined">
+                Contact us
+              </Button>
+            </a>
           </div>
         </div>
         <div className="flex justify-center">
