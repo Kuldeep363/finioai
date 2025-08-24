@@ -74,9 +74,13 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="/join-waitlist" rel="noopener noreferrer">
+            <Link
+              href="/join-waitlist"
+              rel="noopener noreferrer"
+              className="block"
+            >
               <Button
-                className="font-medium"
+                className="font-medium w-full"
                 icon={
                   <ArrowLineUpRightIcon
                     weight="bold"
@@ -140,9 +144,13 @@ const Header = () => {
             >
               FAQ
             </a> */}
-            <Link href="/join-waitlist" rel="noopener noreferrer">
+            <Link
+              href="/join-waitlist"
+              rel="noopener noreferrer"
+              className="block"
+            >
               <Button
-                className="font-medium"
+                className="font-medium w-full"
                 icon={
                   <ArrowLineUpRightIcon
                     weight="bold"

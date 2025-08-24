@@ -23,9 +23,13 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-6 mb-6">
-            <Link href="/join-waitlist" rel="noopener noreferrer">
+            <Link
+              href="/join-waitlist"
+              rel="noopener noreferrer"
+              className="block"
+            >
               <Button
-                className="font-medium mt-3"
+                className="font-medium mt-3 w-full"
                 icon={
                   <ArrowLineUpRightIcon
                     weight="bold"

@@ -17,9 +17,13 @@ const TreasuryIsBroken = () => {
             <span className="font-bold">FinioAI is.</span>
           </p>
           <div className="flex justify-center sm:justify-start">
-            <Link href="/join-waitlist" rel="noopener noreferrer">
+            <Link
+              href="/join-waitlist"
+              rel="noopener noreferrer"
+              className="block w-full sm:w-[unset]"
+            >
               <Button
-                className="font-medium bg-white hover:!bg-white !text-primary hover:!text-primary mt-3"
+                className="font-medium bg-white hover:!bg-white !text-primary hover:!text-primary mt-3 w-full"
                 icon={
                   <ArrowLineUpRightIcon
                     weight="bold"

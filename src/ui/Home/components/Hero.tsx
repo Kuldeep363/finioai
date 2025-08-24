@@ -29,9 +29,13 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16 w-full">
-            <Link href="/join-waitlist" rel="noopener noreferrer">
+            <Link
+              href="/join-waitlist"
+              rel="noopener noreferrer"
+              className="block"
+            >
               <Button
-                className="font-medium sm:w-[350px]"
+                className="font-medium sm:w-[350px] w-full"
                 icon={
                   <ArrowLineUpRightIcon
                     weight="bold"
@@ -45,7 +49,7 @@ const Hero = () => {
               </Button>
             </Link>
             <a href="mailto:info@finioai.com" className="block">
-              <Button className="font-medium" variant="outlined">
+              <Button className="font-medium w-full" variant="outlined">
                 Contact us
               </Button>
             </a>
@@ -54,14 +58,14 @@ const Hero = () => {
         <div className="flex justify-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <Image
-              src="https://kuldeep363.github.io/assets/hero-img.png"
+              src="https://kuldeep363.github.io/assets/hero-img-lg.png"
               alt="finio ai dashboard"
               width={2000}
               height={1500}
               className="w-full hidden sm:block"
             />
             <Image
-              src="https://kuldeep363.github.io/assets/finio-hero-sm.png"
+              src="https://kuldeep363.github.io/assets/hero-img-sm.png"
               alt="finio ai dashboard"
               width={2000}
               height={1500}

@@ -84,9 +84,13 @@ const HowItWorks = () => {
         </div>
 
         <div className="flex justify-center w-full">
-          <Link href="/join-waitlist" rel="noopener noreferrer">
+          <Link
+            href="/join-waitlist"
+            rel="noopener noreferrer"
+            className="block w-full sm:w-[unset]"
+          >
             <Button
-              className="font-medium mt-3 w-full "
+              className="font-medium mt-3 w-full"
               icon={
                 <ArrowLineUpRightIcon
                   weight="bold"

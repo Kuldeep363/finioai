@@ -147,7 +147,11 @@ const ProblemSolution = () => {
         </div>
         <div className="flex justify-center w-full">
           <div className="pt-4 w-full sm:w-1/3">
-            <Link href="/join-waitlist" rel="noopener noreferrer">
+            <Link
+              href="/join-waitlist"
+              rel="noopener noreferrer"
+              className="block"
+            >
               <Button
                 icon={<ArrowLineUpRightIcon size={16} weight="bold" />}
                 iconPosition="right"
