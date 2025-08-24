@@ -61,12 +61,14 @@ const CTA = () => {
           </div>
 
           <div className="border-t border-gray-200 pt-6">
-            <div className="flex items-center justify-center space-x-2 text-sub-text">
-              <EnvelopeSimpleIcon className="h-5 w-5" />
-              <span>Questions? Reach out to</span>
+            <div className="flex items-center justify-center text-sub-text flex-wrap gap-1">
+              <div className="flex items-center gap-1">
+                <EnvelopeSimpleIcon className="h-5 w-5" />
+                <span>Questions? Reach out to</span>
+              </div>
               <a
                 href="mailto:info@finioai.com"
-                className="text-primary hover:text-primary-hover font-medium"
+                className="text-primary hover:text-primary-hover font-medium block"
               >
                 info@finioai.com
               </a>
