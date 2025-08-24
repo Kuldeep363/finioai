@@ -8,6 +8,7 @@ import {
   XCircleIcon,
   XIcon,
 } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 import React from "react";
 const PROBLEMS = [
   {
@@ -146,11 +147,7 @@ const ProblemSolution = () => {
         </div>
         <div className="flex justify-center w-full">
           <div className="pt-4 w-full sm:w-1/3">
-            <a
-              href="https://app.youform.com/forms/qtqzxawm"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="/join-waitlist" rel="noopener noreferrer">
               <Button
                 icon={<ArrowLineUpRightIcon size={16} weight="bold" />}
                 iconPosition="right"
@@ -158,7 +155,7 @@ const ProblemSolution = () => {
               >
                 Join Waitlist
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -116,3 +116,15 @@ export const colorTransparency = {
     100: 'FF',
 }
 
+export function isValidWorkEmail(email: string): boolean {
+  // Basic email format regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(email)) {
+    return false; // Invalid email format
+  }
+
+  // Block gmail.com domain
+  const domain = email.split("@")[1].toLowerCase();
+  return domain !== "gmail.com";
+}

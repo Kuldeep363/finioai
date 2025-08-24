@@ -9,6 +9,7 @@ import React from "react";
 import Header from "./Header";
 import { Button } from "@/components/button/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -28,11 +29,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16 w-full">
-            <a
-              href="https://app.youform.com/forms/qtqzxawm"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="/join-waitlist" rel="noopener noreferrer">
               <Button
                 className="font-medium sm:w-[350px]"
                 icon={
@@ -46,7 +43,7 @@ const Hero = () => {
               >
                 Join waitlist
               </Button>
-            </a>
+            </Link>
             <a href="mailto:info@finioai.com" className="block">
               <Button className="font-medium" variant="outlined">
                 Contact us

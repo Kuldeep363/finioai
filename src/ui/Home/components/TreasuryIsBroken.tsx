@@ -1,5 +1,6 @@
 import { Button } from "@/components/button/Button";
 import { ArrowLineUpRightIcon } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 import React from "react";
 
 const TreasuryIsBroken = () => {
@@ -16,11 +17,7 @@ const TreasuryIsBroken = () => {
             <span className="font-bold">FinioAI is.</span>
           </p>
           <div className="flex justify-center sm:justify-start">
-            <a
-              href="https://app.youform.com/forms/qtqzxawm"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="/join-waitlist" rel="noopener noreferrer">
               <Button
                 className="font-medium bg-white hover:!bg-white !text-primary hover:!text-primary mt-3"
                 icon={
@@ -34,7 +31,7 @@ const TreasuryIsBroken = () => {
               >
                 Join waitlist
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

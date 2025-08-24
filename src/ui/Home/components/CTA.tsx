@@ -6,6 +6,7 @@ import {
   ChatTeardropTextIcon,
   EnvelopeSimpleIcon,
 } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 import React from "react";
 
 const CTA = () => {
@@ -22,11 +23,7 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-6 mb-6">
-            <a
-              href="https://app.youform.com/forms/qtqzxawm"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="/join-waitlist" rel="noopener noreferrer">
               <Button
                 className="font-medium mt-3"
                 icon={
@@ -40,7 +37,7 @@ const CTA = () => {
               >
                 Join waitlist
               </Button>
-            </a>
+            </Link>
             <a href="mailto:info@finioai.com" className="block">
               <Button
                 className="font-medium mt-3 bg-white w-full"

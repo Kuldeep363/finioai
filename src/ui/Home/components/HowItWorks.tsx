@@ -7,6 +7,7 @@ import {
   LinkIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const HowItWorks = () => {
@@ -83,12 +84,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="flex justify-center w-full">
-          <a
-            href="https://app.youform.com/forms/qtqzxawm"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-1/3"
-          >
+          <Link href="/join-waitlist" rel="noopener noreferrer">
             <Button
               className="font-medium mt-3 w-full "
               icon={
@@ -102,7 +98,7 @@ const HowItWorks = () => {
             >
               Join waitlist
             </Button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
